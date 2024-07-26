@@ -1,5 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+/* color: #cc866c; */
 
 body{
     font-family: "Oswald", sans-serif;
+    color: white;
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 16px;
+    font-style: normal;
+    background: #000;
 }
+
+/* commom styles */
+.section-container {
+    max-width: 85%;
+    margin: 0 auto;
+}
+a.btn-primary {
+    background-color: #cc866c;
+    box-shadow: 2.5px 4.33px 15px 0px rgba(0, 0, 0, 0.15);
+    color: #FFF;
+    padding: 20px 40px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+.bg-lp{
+    background-color: #cc866c;;
+}
+.cl-lp{
+    color: #cc866c;;
+}
+/* commom styles */
+
+
+/* header section styles */
+header{
+    background: url(img/banner.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+nav.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo h3 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+
+}
+.nav-items ul {
+    display: flex;
+    gap: 40px;
+}
+.nav-items ul li {
+    list-style: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+}
+.nav-bar-icon{
+    display: none;
+    font-size: 1.5rem;
+    border: 1px solid white;
+    padding: 1px 10px;
+}
+.banner-content {
+    margin: 8.1rem 0 1rem 0;
+}
+.banner-content h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    margin: 0 0 4rem 0;
+}
+.banner-content h5 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+/* header section styles */
+
+/* Responsive design styles */
+@media screen and (max-width:576px) {
+    .section-container{
+        max-width: 95%;
+    }
+    .nav-items, .nav-btn{
+        display: none;
+    }
+    .nav-bar-icon{
+        display: block;
+    }
+    .banner-content h1 {
+        font-size: 3.8rem;
+        font-weight: 300;
+    }
+    .banner-content{
+        margin-top: 3rem;
+    }
+}
+/* Responsive design styles */
