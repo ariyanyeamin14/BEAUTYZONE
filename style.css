@@ -14,13 +14,16 @@ body{
 }
 
 /* commom styles */
-.section-container {
+.section-container, section {
     max-width: 85%;
     margin: 0 auto;
 }
+section{
+    margin-top: 120px;
+}
 a.btn-primary {
     background-color: #cc866c;
-    box-shadow: 2.5px 4.33px 15px 0px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 2.5px 4.33px 15px 0px rgba(0, 0, 0, 0.15); */
     color: #FFF;
     padding: 20px 40px;
     border-radius: 30px;
@@ -92,12 +95,75 @@ nav.nav-bar {
 }
 /* header section styles */
 
+/* About section styles */
+.about{
+    display: flex;
+    justify-content: space-between;
+    gap: 55px;
+    align-items: center;
+}
+.about-img{
+    position: relative;
+}
+.about-circle.bg-lp span {
+    font-size: 50px;
+    font-family: 'Oswald';
+}
+.about-circle {
+    font-family: "roboto";
+    background-color: #cc866c;
+    display: inline;
+    padding: 35px 25px;
+    position: absolute;
+    border-radius: 100%;
+    border: 3px solid white;
+    left: 245px;
+    top: 205px;
+    text-align: center;
+}
+.about-content h5 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 17px;
+    margin-bottom: 0;
+}
+h2.about-title {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+}
+p.about-description {
+    color: #777;
+    font-family: 'Roboto';
+    line-height: 1.5;
+}
+.about-text {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.about-text p{
+    color: #777;
+    font-family: 'Roboto';
+}
+.about-btn {
+    margin-top: 30px;
+}
+/* About section styles */
+
+
+
+
 /* Responsive design styles */
 @media screen and (max-width:576px) {
-    .section-container{
+    img{
+        width: 100%
+    }
+    .section-container, section{
         max-width: 95%;
     }
-    .nav-items, .nav-btn{
+    .nav-items, .nav-btn, .about-circle{
         display: none;
     }
     .nav-bar-icon{
@@ -109,6 +175,13 @@ nav.nav-bar {
     }
     .banner-content{
         margin-top: 3rem;
+    }
+    .about{
+        flex-direction: column;
+        gap:5px ;
+    }
+    h2.about-title{
+        font-size: 25px;
     }
 }
 /* Responsive design styles */
