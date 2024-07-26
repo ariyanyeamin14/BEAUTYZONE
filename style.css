@@ -11,15 +11,29 @@ body{
     font-size: 16px;
     font-style: normal;
     background: #000;
+    margin: 0;
 }
 
 /* commom styles */
-.section-container, section {
+.section-container, .about, .user-container {
     max-width: 85%;
     margin: 0 auto;
 }
-section{
+section, .about{
     margin-top: 120px;
+}
+h2.section-title {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 40px;
+}
+.section-little{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 17px;
+    color:#cc866c ;
 }
 a.btn-primary {
     background-color: #cc866c;
@@ -122,16 +136,7 @@ nav.nav-bar {
     text-align: center;
 }
 .about-content h5 {
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 17px;
     margin-bottom: 0;
-}
-h2.about-title {
-    font-size: 60px;
-    text-transform: uppercase;
-    font-weight: 300;
-    margin: 0;
 }
 p.about-description {
     color: #777;
@@ -152,7 +157,18 @@ p.about-description {
 }
 /* About section styles */
 
-
+/* User section styles */
+.users{
+    background-color: #222;
+}
+.user-container {
+    padding: 100px 0;
+}
+.users-img-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+/* User section styles */
 
 
 /* Responsive design styles */
@@ -160,8 +176,11 @@ p.about-description {
     img{
         width: 100%
     }
-    .section-container, section{
+    .section-container{
         max-width: 95%;
+    }
+    section, .about {
+        margin-top: 70px;
     }
     .nav-items, .nav-btn, .about-circle{
         display: none;
@@ -180,8 +199,15 @@ p.about-description {
         flex-direction: column;
         gap:5px ;
     }
-    h2.about-title{
+    h2.section-title{
         font-size: 25px;
+    }
+    .users-img-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+    .user-container {
+        padding: 50px 0;
     }
 }
 /* Responsive design styles */
