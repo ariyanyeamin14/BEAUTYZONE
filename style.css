@@ -197,6 +197,39 @@ p.services-card-description {
 }
 /* Services section styles */
 
+/* Feedback section title  */
+.feedback{
+    background: url(img/feedback.png);
+    text-align: center;
+    padding: 120px 0;
+}
+h2.feedback-text {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 30px;
+    width: 85%;
+    margin: 40px auto;
+}
+.feedback-person {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+h3.feedback-person-name {
+    font-weight: 300;
+    margin: 0;
+    font-size: 21px;
+}
+p.feedback-person-designaion {
+    margin: 5px 0;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+/* Feedback section title  */
+
+
 
 /* Responsive design styles */
 @media screen and (max-width:576px) {
@@ -238,6 +271,12 @@ p.services-card-description {
     }
     .services-card-container{
         flex-direction: column;
+    }
+    h2.feedback-text{
+        width: auto;
+    }
+    .feedback-person img, img.qt-ion {
+        width: 18%;
     }
 }
 /* Responsive design styles */
