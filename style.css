@@ -15,11 +15,11 @@ body{
 }
 
 /* commom styles */
-.section-container, .about, .user-container, .services {
+.section-container, .about, .user-container, .services, .news {
     max-width: 85%;
     margin: 0 auto;
 }
-section, .about, .services{
+section, .about, .services, .news{
     margin-top: 120px;
 }
 h2.section-title {
@@ -267,16 +267,66 @@ a.portfolio-btn.fst-child {
 }
 /* Portfolio section styles */
 
+/* News section styles */
+.news{
+    text-align: center;
+}
+.news-box-container {
+    display: flex;
+    gap: 23px;
+}
+.news-box{
+    background-color: #222;
+}
+img.news-img{
+    width: 100%;
+}
+.news-content {
+    text-align: left;
+    padding: 30px;
+    font-family: "roboto";
+}
+.news-admin-date {
+    display: flex;
+    /* gap: 30px; */
+    color: #777;
+    text-transform: capitalize;
+}
+.news-admin {
+    padding-right: 12px;
+    margin-right: 1px solid #353535;
+    border-right: 2px solid #575757;
+}
+.news-date{
+    padding-left: 12px;
+}
+.news-admin-date i{
+    color: #cc866c;
+    margin-right: 5px;
+}
+h3.news-title {
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-weight: 300;
+    font-size: 23px;
+}
+p.news-description {
+    color: #777;
+    font-size: 17px;
+    line-height: 1.5;
+}
+/* News section styles */
+
 
 /* Responsive design styles */
 @media screen and (max-width:576px) {
     img{
         width: 100%
     }
-    .section-container, .services, .about{
+    .section-container, .services, .about, .news{
         max-width: 90%;
     }
-    section, .about, .services {
+    section, .about, .services, .news {
         margin-top: 70px;
     }
     .nav-items, .nav-btn, .about-circle{
@@ -335,6 +385,12 @@ a.portfolio-btn.fst-child {
     }
     #portfoli-title{
         margin-bottom: 25px;
+    }
+    .news-box-container{
+        flex-direction: column;
+    }
+    .news-content{
+        padding: 25px;
     }
 }
 /* Responsive design styles */
