@@ -309,6 +309,9 @@ a.portfolio-btn.fst-child {
     .services-card-container{
         flex-direction: column;
     }
+    .feedback, .portfolio{
+        padding: 75px 0;
+    }
     h2.feedback-text{
         width: auto;
     }
