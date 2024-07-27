@@ -27,7 +27,7 @@ h2.section-title {
     text-transform: uppercase;
     font-weight: 300;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 .section-little{
     text-transform: uppercase;
@@ -227,8 +227,45 @@ p.feedback-person-designaion {
     font-family: 'Roboto';
     font-size: 14px;
 }
-/* Feedback section title  */
+/* Feedback section styles  */
 
+/* Portfolio section styles */
+.portfolio {
+    background: #222;
+    padding: 105px 0;
+    margin-top: 0;
+}
+.portfolio-img-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.portfolio-img-container img{
+    width: 100%;
+}
+.portfolio-top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.portfolio-btn{
+    background-color: #fff;
+    box-shadow: 2.5px 4.33px 15px 0px rgba(0, 0, 0, 0.15);
+    color: #000;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 25px;
+    font-family: "Oswald", sans-serif;
+    margin-left: 10px;
+}
+a.portfolio-btn.fst-child {
+    background: #cc866c;
+    color: white;
+}
+/* Portfolio section styles */
 
 
 /* Responsive design styles */
@@ -277,6 +314,15 @@ p.feedback-person-designaion {
     }
     .feedback-person img, img.qt-ion {
         width: 18%;
+    }
+    .portfolio-img-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    a.portfolio-btn {
+        display: none;
+    }
+    a.portfolio-btn.fst-child {
+        display: block;
     }
 }
 /* Responsive design styles */
