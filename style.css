@@ -513,6 +513,9 @@ h3.footer-middle-title {
         padding: 19px 0px 15px 10px;
         border: none;
     }
+    .signup-input{
+        margin-left: -7px;
+    }
     input#submit{
         padding: 15px 22px;
     }
