@@ -88,6 +88,10 @@ nav.nav-bar {
     font-family: "Oswald", sans-serif;
     color: #fff;
 }
+.nav-items ul li a {
+    text-decoration: none;
+    color: white;
+}
 .nav-bar-icon{
     display: none;
     font-size: 1.5rem;
